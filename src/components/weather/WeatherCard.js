@@ -38,7 +38,7 @@ const WeatherCard = ({tempInfo}) => {
         }
       }, [weathermood]);
   return (
-    <>
+    <div>
         <div className='widget'>
             <div className='weatherIcon'>
                 <i className={`wi ${weatherState}`}></i>
@@ -90,7 +90,7 @@ const WeatherCard = ({tempInfo}) => {
                 </div>
             </div>
         </div>
-    </>
+    </div>
   )
 }
 

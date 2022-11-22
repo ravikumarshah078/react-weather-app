@@ -34,7 +34,7 @@ const Temp = () => {
         getWeatherInfo();
     },[]);
   return (
-    <>
+    <div>
         <div className='wrap'>
             <div className='search'>
                 <input type="search" placeholder='search.....' value={search} onChange={(e)=>setSearch(e.target.value)} autoFocus id='search' className='searchTerm'/>
@@ -42,7 +42,7 @@ const Temp = () => {
             </div>
         </div>
         <WeatherCard tempInfo={tempInfo}/>
-    </>
+    </div>
   )
 }
 
